@@ -1,11 +1,8 @@
-#!/bin/sh
+#!/usr/bin/env bash
+# bin/release <build-dir>
 
-cat << EOF
+cat <<EOF
 ---
-addons:
-  - shared-database:5mb
-config_vars:
-  PATH: bin:/usr/bin:/bin
 default_process_types:
-  hello: cat hello.txt
+  web: python -m SimpleHTTPServer $PORT
 EOF
