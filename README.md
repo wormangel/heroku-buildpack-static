@@ -5,4 +5,4 @@ This is a very simple static buildpack for Heroku using Python's builtin SimpleH
 
 It simply generates a Procfile containing the following :
 
-    web: python -m SimpleHTTPServer $PORT
+    web: python -m http.server $PORT
